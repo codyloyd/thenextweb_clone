@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body{
 	width: 100%;
 	font-family: 'Open Sans', sans-serif;
@@ -6,9 +11,17 @@ body{
 	flex-direction: column;
 }
 
-header#main{
-	width: auto;
+
+#main{
+	width: 100%;
 	height: 75px;
+}
+
+.fixed{
+	margin-top:-30px;
+	position: fixed;
+	flex: 0 0 auto;
+	width: 100%;
 }
 #top {
 	width: auto;
@@ -25,6 +38,7 @@ header#main{
 	color: white;
 
 }
+
 
 ul {
 	list-style: none;
@@ -71,9 +85,6 @@ li {
 	width: 50%;
 	height: 100%;
 	background: #d0eb4d;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 #secondary_articles {
@@ -105,20 +116,21 @@ li {
 	background: #b61178;
 }
 
-#latestnews {
-	width: 95%;
+#latestnews, #latestdeals {
+	width: 85%;
+	min-width: 1000px;
 	display: flex;
 	flex-direction: column;
 	margin: auto;
 }
 
-#articlecontainer {
+#articlecontainer, #latestdealscontainer {
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
 }
 
-#latestnews header {
+#latestnews header, #latestdeals header {
 	width: 100%;
 	line-height: 1.5;
 	font-size: 28px;
@@ -126,12 +138,45 @@ li {
 	display: flex;
 }
 
-#latestnews article {
+#latestnews article, #latestdeals article {
 	width: 25%;
 	height: 200px;
 	background: #537829;
 	border: 1px solid #9c79c9;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 }
+
+#categories {
+	width: 85%;
+	min-width: 1000px;
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+#categories div {
+	width: 33.33%;
+	height: 400px;
+	background: #f5bb8c;
+	border: 1px solid #cb5b9b;
+}
+
+#quoteoftheday {
+	width: 100%;
+	height: 300px;
+	background: #9cf6e8;
+	margin-top: 50px;
+}
+
+#footlinks {
+	width: 100%;
+	height: 150px;
+	background: #7c4566;
+}
+
+#copyright {
+	width: 100%;
+	height: 100px;
+	background: #63ac41;
+}
+
