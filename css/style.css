@@ -86,9 +86,36 @@ li {
 #headliner {
 	width: 50%;
 	height: 100%;
-	background: #d0eb4d;
+	background-image: url(../img/loungr.jpg);
+	background-position: center center;
+	background-size: cover;
+	z-index: 1;
+	position: relative;
 }
 
+.articlelink {
+	background: url(../img/image-gradient.png) no-repeat rgba(0,0,0,.25);
+	background-size: 100% 100%;
+	position: absolute;
+	display: block;
+	z-index: 2;
+	top: 4px;
+	right: 4px;
+	bottom: 4px;
+	left: 4px;
+}
+
+.covergradient {
+	background: url(../img/cover-gradient.png) top left no-repeat;
+	background-size: cover;
+	bottom: 4px;
+	left: 4px;
+	mix-blend-mode: lighten;
+	right: 4px;
+	top: 4px;
+	z-index: 4;
+	position: absolute;
+}
 #secondary_articles {
 	width: 50%;
 	height: 100%
@@ -97,7 +124,10 @@ li {
 #article2 {
 	width: 100%;
 	height: 50%;
-	background: #42fa92;
+	background: url(../img/apple.png);
+	background-position: center center;
+	background-size: cover;
+	position: relative;
 }
 
 #tertiary {
@@ -109,13 +139,19 @@ li {
 #article3 {
 	width: 50%;
 	height: 100%;
-	background: #263266;
+	background: url(../img/amazon.png);
+	background-position: center center;
+	background-size: cover;
+	position: relative;
 }
 
 #article4 {
 	width: 50%;
 	height: 100%;
-	background: #b61178;
+	background: url(../img/emoji.jpg);
+	background-position: center center;
+	background-size: cover;
+	position: relative;
 }
 
 #latestnews, #latestdeals {
@@ -194,6 +230,10 @@ li {
 #headliner{
 	width: 100%;
 	height: 60%;
+}
+
+.covergradient{
+	background: none;
 }
 #secondary_articles {
 	width: 100%;
